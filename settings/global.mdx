@@ -251,8 +251,21 @@ Example: `mintlify`
 </ResponseField>
 
 <ResponseField name="hideFeedbackButtons" type="boolean" default="false">
+  <Warning>This option is deprecated. Use `feedback` instead.</Warning>
   Whether or not to hide the edit suggestion and raise and issue buttons at the
   top of every page. Defaults to `false`
+</ResponseField>
+
+<ResponseField name="feedback" type="Object">
+  Customize which types of feedback to allow on your docs
+  <Expandable title="Object">
+    <ResponseField name="suggestEdit" default="false" type="boolean">
+      Allow users to suggest edits on your docs. Defaults to `false`
+    </ResponseField>
+    <ResponseField name="raiseIssue" default="false" type="boolean">
+      Allow users to raise an issue with your docs. Defaults to `false`
+    </ResponseField>
+  </Expandable>
 </ResponseField>
 
 <ResponseField name="modeToggle" type="ModeToggle">
