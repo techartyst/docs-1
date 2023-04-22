@@ -101,7 +101,8 @@
         "api-playground/overview",
         "api-playground/configuration",
         "api-playground/authentication",
-        "api-playground/openapi"
+        "api-playground/openapi",
+        "api-playground/graphql"
       ]
     },
     {
